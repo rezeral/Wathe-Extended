@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "description": "\u00A7rResources for The Last Voyage of the Harpy Express modpack (built-in)",
+        "pack_format": 34,
+        "supported_formats": {"min_inclusive": 34, "max_inclusive": 34}
+    }
+}

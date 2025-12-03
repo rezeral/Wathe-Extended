@@ -1,0 +1,10 @@
+{
+	// Whether insane players will randomly see people as morphed.
+	insanePlayersSeeMorphs: true,
+	// Allows the shitpost roles to retain their disable/enable state after a server restart
+	shitpostRoles: false,
+	// Starting cooldown (in ticks)
+	generalCooldownTicks: 600,
+	// Allow Natural deaths to trigger voodoo (deaths without an assigned killer)
+	voodooNonKillerDeaths: false
+}

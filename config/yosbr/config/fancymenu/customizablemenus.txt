@@ -1,0 +1,47 @@
+type = customizablemenus
+
+net.minecraft.class_442 {
+}
+
+net.minecraft.class_433 {
+}
+
+net.minecraft.class_423 {
+}
+
+net.minecraft.class_429 {
+}
+
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
+net.minecraft.class_3928 {
+}
+
+net.minecraft.class_412 {
+}
+
+net.minecraft.class_434 {
+}
+
+net.minecraft.class_424 {
+}
+
+net.minecraft.class_435 {
+}
+
+me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen {
+}
+
+net.irisshaders.iris.gui.screen.ShaderPackScreen {
+}
+
+net.minecraft.class_526 {
+}
+
+net.minecraft.class_408 {
+}
+
+net.minecraft.class_5375 {
+}
+

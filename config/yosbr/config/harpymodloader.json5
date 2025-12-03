@@ -1,0 +1,9 @@
+{
+	// Disables roles from being in the role pool. use /listRoles to get role names, use /enableRoles to ban/unban them in-game (saves here).
+	disabled: [
+		"awesome_binglus",
+		"the_insane_damned_paranoid_killer",
+		"phantom",
+		"noisemaker"
+	]
+}
