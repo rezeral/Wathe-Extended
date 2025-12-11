@@ -33,7 +33,7 @@
     },
     "enderman_head": {
       // Allows wearing shulker shells
-      "enabled": true,
+      "enabled": false,
       "drop_head": true,
       // Accepted range: 0 to 10000
       "ticks_to_increase_power": 15,
@@ -117,7 +117,7 @@
       // Allows wearing shulker shells
       "enabled": false,
       "sack_penalty": true,
-      // Accepted range: 0 to 50
+      // Accepted range: 1 to 50
       "sack_increment": 2,
       // Accepted range: 1 to 9
       "slots": 9
@@ -189,6 +189,11 @@
         // Accepted range: 0.0 to 10.0
         "break_radius": 1.1
       },
+      "plunderer": {
+        // Allows wearing shulker shells
+        "enabled": true,
+        "galleon": true
+      },
       "music_disc_heave_ho": true
     },
     "present": {
@@ -219,6 +224,14 @@
     "hourglass": true
   },
   "building": {
+    "spider_head": {
+      // Allows wearing shulker shells
+      "enabled": true
+    },
+    "barnacles": {
+      // Allows wearing shulker shells
+      "enabled": true
+    },
     "blackboard": {
       // Allows wearing shulker shells
       "enabled": false,
@@ -228,7 +241,8 @@
     },
     "gravel_bricks": {
       // Allows wearing shulker shells
-      "enabled": false
+      "enabled": false,
+      "allow_breaking": true
     },
     "slidy_block": {
       // Allows wearing shulker shells
@@ -249,9 +263,13 @@
       "double_opening": true,
       "door-like_gates": false
     },
+    "gold_bars": {
+      // Allows wearing shulker shells
+      "enabled": true
+    },
     "item_shelf": {
       // Allows wearing shulker shells
-      "enabled": true,
+      "enabled": false,
       "climbable_shelves": false
     },
     "sugar_cube": {
@@ -308,7 +326,12 @@
       "road_signs": {
         // Allows wearing shulker shells
         "enabled": true,
-        "show_distance_text": true
+        "show_distance_text": true,
+        // Accepted range: 1 to 1000
+        "max_search_radius": 200,
+        "exit_search_early": true,
+        // Accepted range: 1 to 1000
+        "max_structures_searches": 12
       }
     },
     "daub": {
@@ -335,7 +358,7 @@
     },
     "flower_box": {
       // Allows wearing shulker shells
-      "enabled": true,
+      "enabled": false,
       "simple_mode": true
     },
     "netherite_doors": {
@@ -490,6 +513,12 @@
       // Allows wearing shulker shells
       "enabled": false
     },
+    "ai_tweaks": {
+      // Allows pillagers to use cannon boats. Add more entities to the 'supplementaries:can_use_cannon_boat' tag to allow them to use cannon boats as well
+      "pillagers_use_cannon_boats": true,
+      // Allows mobs to dismount from boats when on land. Add more entities to the 'supplementaries:can_dismount_boats' tag to allow them to dismount as well
+      "raiders_dismount_boats": true
+    },
     "golden_apple_disenchant": {
       // Allows wearing shulker shells
       "enabled": false
@@ -531,12 +560,18 @@
       "target_block": ""
     },
     "map_tweaks": {
-      "random_adventurer_maps": true,
-      "random_adventurer_maps_select_random_structure": true,
-      "block_map_markers": true,
+      "random_adventurer_maps": {
+        // Allows wearing shulker shells
+        "enabled": true,
+        // Accepted range: 1 to 1000
+        "max_search_radius": 100,
+        // Accepted range: 1 to 1000
+        "max_structures_searches": 1
+      },
+      "block_map_markers": false,
       // Accepted values: OFF, WITH_COMPASS, ALWAYS
       "death_marker": "WITH_COMPASS",
-      "tinted_blocks_on_maps": true
+      "tinted_blocks_on_maps": false
     },
     "placeable_books": {
       // Allows wearing shulker shells

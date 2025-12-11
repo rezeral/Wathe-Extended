@@ -1,6 +1,6 @@
 #Show how many more lines there are that currently don't fit the tooltip, just like the vanilla shulker box tooltip.
 #Default Value: true
-last_line = true
+last_line = false
 #Show black chat background behind tooltip lines for better visibility.
 #Default Value: RECTANGLE
 #Allowed Values: NONE, RECTANGLE, ADAPTIVE
@@ -22,7 +22,7 @@ additional_tooltip_lines = true
 #Default Value: 59
 # Default: 59
 # Range: > 0
-offset_y = 45
+offset_y = 46
 #Interval in ticks after which the tooltip will be rebuilt. Some stats such as durability are rebuilt every tick regardless of this setting.
 #Default Value: 20
 # Default: 20

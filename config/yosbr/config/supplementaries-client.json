@@ -137,15 +137,6 @@
     "placeable_tooltips": false,
     // Enables custom Configured config screen
     "custom_configured_screen": true,
-    // ignore this
-    // Accepted range: -10.0 to 10.0
-    "test1": 0.0,
-    // ignore this
-    // Accepted range: -10.0 to 10.0
-    "test2": 0.0,
-    // ignore this
-    // Accepted range: -10.0 to 10.0
-    "test3": 0.0,
     // unfunny
     "I am very boring": false
   },
@@ -167,15 +158,15 @@
     "mob_head_shaders": false,
     // Sends your current chat when you die while typing
     "send_chat_on_death": true,
-    // Makes enderman heads use vanilla texture. Enable for texture pack support
-    "enderman_head_texture_pack_support": true,
+    // Makes enderman and spider heads use vanilla texture. Enable for texture pack support
+    "enderman_and_spider_head_texture_pack_support": true,
     "colored_maps": {
       // Show a slime overlay when you hit an entity with a slimeball
-      "slime_effect_overlay": true,
+      "slime_effect_overlay": false,
       // Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
-      "tinted_blocks_on_maps": true,
+      "tinted_blocks_on_maps": false,
       // Colors tall grass same color as grass
-      "tall_grass_color": true,
+      "tall_grass_color": false,
       // Makes colored maps a bit more accurate. Might affect performance
       "accurate_colors": false
     }

@@ -7,14 +7,14 @@
       },
       "direction": {
         "x": "NONE",
-        "y": "DOWN"
+        "y": "NONE"
       },
       "sync": "minecraft:bossbar"
     },
     "minecraft:chat": {
       "displacement": {
         "x": 0,
-        "y": 0
+        "y": 44
       },
       "direction": {
         "x": "NONE",
@@ -28,8 +28,8 @@
         "y": 0
       },
       "direction": {
-        "x": "LEFT",
-        "y": "DOWN"
+        "x": "NONE",
+        "y": "NONE"
       },
       "sync": "minecraft:effects"
     },
@@ -62,17 +62,17 @@
       },
       "direction": {
         "x": "NONE",
-        "y": "DOWN"
+        "y": "NONE"
       },
       "sync": "minecraft:players"
     },
     "minecraft:sidebar": {
       "displacement": {
-        "x": 0,
+        "x": 1,
         "y": 0
       },
       "direction": {
-        "x": "LEFT",
+        "x": "RIGHT",
         "y": "NONE"
       },
       "sync": "minecraft:sidebar"
@@ -105,8 +105,8 @@
         "y": 0
       },
       "direction": {
-        "x": "LEFT",
-        "y": "DOWN"
+        "x": "NONE",
+        "y": "NONE"
       },
       "sync": "minecraft:toasts"
     }

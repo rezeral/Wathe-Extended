@@ -122,7 +122,7 @@
     "infiniteReachLimit": -1,
     "fastPlace": false,
     "angelPlacement": false,
-    "noClip": false,
+    "noClip": true,
     "phantom": false
   },
   "blockAttributes": {

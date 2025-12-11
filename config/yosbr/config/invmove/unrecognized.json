@@ -51,7 +51,13 @@
     "arm32x.minecraft.commandblockide.client.gui.screen.CommandBlockIDEScreen": true,
     "de.maxhenkel.voicechat.gui.volume.AdjustVolumesScreen": true,
     "net.minecraft.class_440": true,
-    "de.keksuccino.fancymenu.customization.customgui.CustomGuiBaseScreen": true
+    "de.keksuccino.fancymenu.customization.customgui.CustomGuiBaseScreen": true,
+    "bettercommandblockui.main.ui.screen.BetterCommandBlockScreen": true,
+    "gg.essential.gui.sps.WorldShareSettingsGui": true,
+    "de.keksuccino.fancymenu.util.rendering.ui.screen.resource.ResourceChooserScreen": true,
+    "net.neoforged.neoforge.client.gui.ConfigurationScreen$ConfigurationSectionScreen": true,
+    "dev.yurisuika.raised.client.gui.screens.RaisedScreen": true,
+    "com.moulberry.axiom.screen.EditDisplayEntityScreen": true
   },
   "hideBackground": {
     "dev.doctor4t.trainmurdermystery.client.gui.screen.ingame.LimitedInventoryScreen": true

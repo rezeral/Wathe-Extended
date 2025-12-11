@@ -1,0 +1,8 @@
+{
+    "values": [
+        "tmm:debug/tick",
+        "tmm:debug/messages/tick",
+        "tmm:ready_area/tick",
+        "tmm:ready_area/timer/tick"
+    ]
+}

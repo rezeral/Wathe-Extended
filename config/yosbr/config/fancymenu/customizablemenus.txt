@@ -45,3 +45,15 @@ net.minecraft.class_408 {
 net.minecraft.class_5375 {
 }
 
+net.minecraft.class_500 {
+}
+
+com.terraformersmc.modmenu.gui.ModsScreen {
+}
+
+net.minecraft.class_8219 {
+}
+
+com.blamejared.controlling.client.NewKeyBindsScreen {
+}
+

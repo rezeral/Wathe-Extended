@@ -8,7 +8,6 @@ This modpack expands [The Last Voyage of the Harpy Express](https://modrinth.com
 
 These are some of the included mods *in addition* to the base modpack:
 
-- [Essential Mod](https://modrinth.com/mod/essential)
 - [Sodium](https://modrinth.com/mod/sodium) & [Iris Shaders](https://modrinth.com/mod/iris)
 - [Noelle's Roles - TMM](https://modrinth.com/mod/noelles-roles-tmm)
 - [Supplementaries](https://modrinth.com/mod/supplementaries) & [Amendments](https://modrinth.com/mod/amendments)
@@ -17,7 +16,77 @@ These are some of the included mods *in addition* to the base modpack:
 - [Presence Footsteps](https://modrinth.com/mod/presence-footsteps)
 - [Not Enough Animations](https://modrinth.com/mod/not-enough-animations)
 - [Fancy Menu](https://modrinth.com/mod/fancymenu) & [Drippy Loading Screen](https://modrinth.com/mod/drippy-loading-screen)
-- *...and more performance related mods!*
+
+<details>
+<summary>Modlist</summary>
+
+- [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin)
+- [Entity Culling](https://modrinth.com/mod/entityculling)
+- [Immersive Furniture](https://modrinth.com/mod/immersive-furniture)
+- [Sodium](https://modrinth.com/mod/sodium)
+- [Not Enough Recipe Book - [NERB]](https://modrinth.com/mod/notenoughrecipebook)
+- [TxniLib](https://modrinth.com/mod/txnilib)
+- [Talking Heads](https://modrinth.com/mod/talkingheads)
+- [Amendments](https://modrinth.com/mod/amendments)
+- [Yet Another World Protector](https://modrinth.com/mod/yawp)
+- [Melody](https://modrinth.com/mod/melody)
+- [Moonlight Lib](https://modrinth.com/mod/moonlight)
+- [Packet Fixer](https://modrinth.com/mod/packet-fixer)
+- [Cloth Config API](https://modrinth.com/mod/cloth-config)
+- [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered)
+- [Eating Animation](https://modrinth.com/mod/eating-animation)
+- [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl)
+- [[ETF] Entity Texture Features](https://modrinth.com/mod/entitytexturefeatures)
+- [Not Enough Animations](https://modrinth.com/mod/not-enough-animations)
+- [Text Placeholder API](https://modrinth.com/mod/placeholder-api)
+- [Handcrafted](https://modrinth.com/mod/handcrafted)
+- [Presence Footsteps](https://modrinth.com/mod/presence-footsteps)
+- [Noelle's Roles - TMM](https://modrinth.com/mod/noelles-roles-tmm)
+- [BetterF3](https://modrinth.com/mod/betterf3)
+- [The Last Voyage of the Harpy Express (Mod)](https://modrinth.com/mod/harpy-express-mod)
+- [Particle Core](https://modrinth.com/mod/particle-core)
+- [Resourceful Lib](https://modrinth.com/mod/resourceful-lib)
+- [NBT Autocomplete](https://modrinth.com/mod/nbt-autocomplete)
+- [Necronomicon API](https://modrinth.com/mod/necronomicon)
+- [FerriteCore](https://modrinth.com/mod/ferrite-core)
+- [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat)
+- [Fzzy Config](https://modrinth.com/mod/fzzy-config)
+- [Searchables](https://modrinth.com/mod/searchables)
+- [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port)
+- [Controlling](https://modrinth.com/mod/controlling)
+- [Puzzles Lib](https://modrinth.com/mod/puzzles-lib)
+- [CraterLib](https://modrinth.com/mod/craterlib)
+- [Sodium Options Mod Compat](https://modrinth.com/mod/sodium-options-mod-compat)
+- [Iris Shaders](https://modrinth.com/mod/iris)
+- [Harpy Express More Shooter Punishments](https://modrinth.com/mod/harpy-express-more-shooter-punishments)
+- [Raised](https://modrinth.com/mod/raised)
+- [[EMF] Entity Model Features](https://modrinth.com/mod/entity-model-features)
+- [Held Item Tooltips](https://modrinth.com/mod/held-item-tooltips)
+- [Konkrete](https://modrinth.com/mod/konkrete)
+- [Sodium Extra](https://modrinth.com/mod/sodium-extra)
+- [CIT Resewn](https://modrinth.com/mod/cit-resewn)
+- [Simple Discord RPC](https://modrinth.com/mod/simple-discord-rpc)
+- [Supplementaries](https://modrinth.com/mod/supplementaries)
+- [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast)
+- [HarpyModLoader](https://modrinth.com/mod/harpymodloader)
+- [Fabric API](https://modrinth.com/mod/fabric-api)
+- [FancyMenu](https://modrinth.com/mod/fancymenu)
+- [Carpet](https://modrinth.com/mod/carpet)
+- [Ratatouille](https://modrinth.com/mod/ratatouille)
+- [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr)
+- [InvMove](https://modrinth.com/mod/invmove)
+- [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options)
+- [OctoLib](https://modrinth.com/mod/octo-lib)
+- [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides)
+- [Axiom](https://modrinth.com/mod/axiom)
+- [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul)
+- [Architectury API](https://modrinth.com/mod/architectury-api)
+- [Drippy Loading Screen](https://modrinth.com/mod/drippy-loading-screen)
+- [AsyncParticles](https://modrinth.com/mod/asyncparticles)
+- [Sodium Options API](https://modrinth.com/mod/sodium-options-api)
+- [Mod Menu](https://modrinth.com/mod/modmenu)
+
+</details>
 
 Some of the features and content that are present *in addition* to the base modpack:
 
@@ -34,37 +103,48 @@ Use `/listRoles` to view roles and `/setEnabledRole` to enable/disable them.
 
 ### 🔪 Killer Roles
 
-- **Jester**
-<br>
-Cannot use any killer menus.
-<br>
-Has a fake knife and a fake revolver.
-<br>
-When shot, goes psycho mode. Does not have a shield, so one more shot will kill the jester.
-<br>
-Can accidentaly kill their killer teammates and end the game, make sure to co-operate!
-
 - **Morphling**
 <br>
 Can morph into any alive player on a cooldown.
 
-- **Phantom** *(Disabled by default)*
+- **Phantom**
 <br>
-Can gain temporary invisibility on a cooldown. Watch out- your items are still visible! (ps. may break with mods that add extra things to your character)
+Can turn invisibile on a cooldown. Held items are still visible!
 
 - **Swapper**
 <br>
 Can swap two people around the map on a cooldown.
 
-### 🥸 Non‑Innocent Roles
+
+### 🥸 Neutral Roles
+
+- **Jester**
+<br>
+Has a fake knife and a fake revolver that can fake shots.
+<br>
+When shot, goes psycho mode. Does not have a shield, so one shot will kill the jester.
+<br>
+Can accidentally kill their killer teammates and end the game, make sure to co-operate!
+<br>
+Can purchase *Firecrackers*, *Lockpicks*, *Notes*, and *Delusion Vials*.
+<br>
+Gains coins passively over time.
+
+- **Vulture** *(Disabled under 8 players)*
+<br>
+Can eat dead bodies to turn into a killer
 
 - **Executioner**
 <br>
 Gains a target at the start of the game
 <br>
-If the target dies to a civillian or natural causes, the Executioner becomes a random Killer role.
+If the target dies to a civilian or natural causes, the Executioner becomes a random Killer role.
 <br>
 If the target dies to a killer, the executioner re-targets.
+<br>
+Can purchase *Firecrackers*, *Lockpicks*, *Notes*, and *Delusion Vials*
+<br>
+Gains coins passively over time
 
 ### 👤 Civilian Roles
 
@@ -72,23 +152,39 @@ If the target dies to a killer, the executioner re-targets.
 <br>
 Has a key to every door on the train.
 <br>
-This key will drop after the host dies- make sure everyone knows you have it, or the killers can clear themselves with it!
+This key will drop after the host dies, make sure everyone knows you have it, or the killers can clear themselves with it!
 
 - **Bartender**
 <br>
 Can see people who've drink through walls temporarily.
+<br>
+Can see poisonned food and drinks and poisonned players
+<br>
+Can buy *Defense Vial* for 100 coins
+<br>
+Gains 50 coins per task done.
 
 - **Noisemaker** *(Disabled by default)*
 <br>
 When the Noisemaker dies, their body can be seen by everyone though walls.
+<br>
+Can purchase *Firecrackers*
+<br>
+Gains coins passively over time.
+
+- **Recaller**
+<br>
+Can save a location to teleport to later from 100 coins.
+<br>
+Gains 50 coins per task done.
 
 - **Coroner**
 <br>
-Can see the time of death and the reason of the death of by inspecting dead bodies.
+Can see the time of death and the reason of the death and role of dead bodies.
 
 - **Voodoo**
 <br>
-Can choose one player that will die alongside themself.
+Can choose one player that will die alongside themselves.
 
 <details>
 <summary>Bonus roles</summary>
@@ -105,12 +201,18 @@ Killer Role
 <br>
 Can hear dead players
 
+- **Better Vigilante** *(Disabled by default)*
+<br>
+Civilian Role
+<br>
+Spawns with a revolver and a grenade
+
 </details>
 
 ## ❓ How to Play
 
-1. Host a server or use **Essential** to host the provided world.
-2. Ensure the server/world has theses settings:
+1. Host a server with the provided world.
+2. Ensure the server/world has these settings:
    * Peaceful difficulty
    * Adventure mode
    * PvP enabled

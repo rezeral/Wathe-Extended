@@ -8,8 +8,7 @@
         "moonlight:merged_pack",
         "file/Modpack Resources",
         "file/Serified Font.zip",
-        "file/Fresh Moves.zip",
-        "file/Fresh Moves (With Animated Eyes).zip"
+        "file/Fresh Moves.zip"
     ],
     "pack_overrides": {
         "vanilla": {
@@ -34,21 +33,16 @@
         },
         "file/Modpack Resources": {
             "required": true,
-            "fixed_position": true,
-            "hidden": true
+            "fixed_position": false,
+            "hidden": false
         },
         "file/Serified Font.zip": {
             "required": true,
-            "fixed_position": true,
-            "hidden": true
+            "fixed_position": false,
+            "hidden": false
         },
         "file/Fresh Moves.zip": {
             "required": true,
-            "fixed_position": true,
-            "hidden": true
-        },
-        "file/Fresh Moves (With Animated Eyes).zip": {
-            "required": false,
             "fixed_position": false,
             "hidden": false
         },

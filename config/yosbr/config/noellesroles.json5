@@ -6,5 +6,7 @@
 	// Starting cooldown (in ticks)
 	generalCooldownTicks: 600,
 	// Allow Natural deaths to trigger voodoo (deaths without an assigned killer)
-	voodooNonKillerDeaths: false
+	voodooNonKillerDeaths: false,
+	// Makes voodoos act like Evil players when shot by a revolver (no backfire, no gun lost)
+	voodooShotLikeEvil: true
 }

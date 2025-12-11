@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = tmm_options_roles
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1764598561955
+  last_edited_time = 1765223346606
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:e5ea26ca-87b3-4445-8c08-ec4c6ae49a9c-1764598560438] = [groups:][instances:]
+  [loading_requirement_container_meta:0cdc12be-7ae5-4af5-bb7f-94c4476d7582-1765223344742] = [groups:][instances:]
 }
 
 customization {
@@ -76,8 +76,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1922
-  auto_sizing_base_screen_height = 1012
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
   x = -100
