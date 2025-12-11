@@ -1,3 +1,8 @@
+# beta-2.1.126
+
+### 🔧 Fixes
+- Fixed outdated mod configurations, should be better now for people updating the modpack if it was already installed (sorry)
+
 # beta-2.0.126
 
 ### 🆕 Additions
