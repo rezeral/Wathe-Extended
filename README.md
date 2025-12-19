@@ -109,7 +109,7 @@ Some of the features and content that are present *in addition* to the base modp
 
 Use `/listRoles` to view roles and `/setEnabledRole` to enable/disable them.
 
-### ![🔪 Killer Roles](https://github.com/rezeral/TMM-Extended/.github/img/killer.png)
+### ![Killer Roles](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/killer.png)
 
 - **Morphling**
 <br>
@@ -124,7 +124,7 @@ Can turn invisibile on a cooldown by pressing <kbd>G</kbd>. Held items are still
 Can swap two people around the map on a cooldown.
 
 
-### ![🥸 Neutral Roles](https://github.com/rezeral/TMM-Extended/.github/img/neutral.png)
+### ![🥸 Neutral Roles](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/neutral.png)
 
 - **Jester**
 <br>
@@ -154,7 +154,7 @@ Can purchase *Firecrackers*, *Lockpicks*, *Notes*, and *Delusion Vials*
 <br>
 Gains coins passively over time
 
-### ![👤 Civilian Roles](https://github.com/rezeral/TMM-Extended/.github/img/civilian.png)
+### ![👤 Civilian Roles](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/civilian.png)
 
 - **Conductor**
 <br>
