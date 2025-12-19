@@ -1,7 +1,7 @@
 # TMM Extended Datapack
 # Author: @rezeral
-# License: MIT License
-# Version: beta-2.0.126
+# License: GPL-3.0 License
+# Version: beta-2.2.130
 # 
 # At first I tried to make all theses features as a mod, but due to various reasons I switched to a datapack envrionment
 # so it could be more easily used by the community and have more flexibility and customization (also I suck at Java programming lol)
@@ -40,8 +40,8 @@ scoreboard objectives remove tmm_handler_cache
 scoreboard players reset *
 
 # Call all predefined train positions into storage
-# 16 positions total by default, can be edited in .\data\tmm\function\random_tp\pos
-# : You can add or remove positions as needed, but make sure to update any related logic accordingly
+# : 16 positions total by default, you can add or remove positions as needed, but make sure to update any related logic accordingly
+# : Positions are defined in .\data\tmm\function\teleport\pos\
 function tmm:teleport/pos/1
 function tmm:teleport/pos/2
 function tmm:teleport/pos/3
@@ -80,8 +80,9 @@ scoreboard objectives add tmm_debug_ui dummy {"text":"Debug UI","color":"red","b
 scoreboard objectives add tmm_handler minecraft.used:minecraft.carrot_on_a_stick {"text":"Interaction Handler","color":"dark_red"}
 scoreboard objectives add tmm_handler_cache dummy {"text":"Interaction Handler (Cache)","color":"dark_red"}
 
-scoreboard objectives add tmm_assigned dummy {"text":"Assigned Flag","color":"gold"}
-scoreboard objectives add tmm_assigned_slot dummy {"text":"Assigned Slot","color":"gold"}
+# TODO: Objectives needed for random position assignments (to be implemented)
+# scoreboard objectives add tmm_assigned dummy {"text":"Assigned Flag","color":"gold"}
+# scoreboard objectives add tmm_assigned_slot dummy {"text":"Assigned Slot","color":"gold"}
 
 # Load complete message
 tellraw @a [{"text":"[TMM] ","color":"blue"},{"text":"Datapack enabled!","color":"green"}]
