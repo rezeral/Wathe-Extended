@@ -1,3 +1,66 @@
+# beta-2.3.130
+
+### 🆕 Additions
+- Randomized player teleportation across the train at game start.
+
+### 📋 Changes
+- Wathe Extended datapack:
+  - Renamed objectives/score IDs from "tmm" to "wathe"
+  - Reorganized functions
+  - Centralized and optimized tick functions
+  > Datapack intended to work with the default world-save only, but can be modified to fit with custom maps. <br> I'll try to make the datapack variables, functions and stuff like that easier to customize in future updates for the people that might want this datapack and its features to be a part of their custom maps, otherwise have fun tweaking the mess I've created to fit your own goods! :3
+- Reverted auto-start timer to 10 seconds (previously 30)
+- Updated default client configuration.
+- Wathe mod updated to version [1.3](https://modrinth.com/mod/wathe/version/1.3-1.21.1)
+<details>
+<summary>Show Wathe's changelog</summary>
+
+- Changed the mod identifier from "trainmurdermystery" to "wathe" and renamed it to avoid confusion with the Harpy Express modpack and reflect the mod now allowing maps other than trains
+  - Previous maps should still be compatible, as block, item and entity aliases were added to transition mod identifiers
+- Added a new Map Effect API class
+  - Stored on the Game Component, this new class allows modders to make custom effects for maps, with custom initialize
+    and finalize logic independent of the game mode
+  - Using the Last Voyage of the Harpy Express as an example, the wathe:harpy_express map effects (excluding the lobby
+    one) give the players the keys to their room and their letters, as well as setting the time of day and all other
+    ambient effects for the train
+  - /wathe:start now requires a map effect identifier to start the game
+  - For instance, /wathe:start wathe:murder wathe:harpy_express_day allows you to play the murder mystery game mode
+    during the day
+  - Added a generic simple map effect that can be used by custom non-train maps
+- Added a /wathe:mapVariables command that allows changing variables for custom maps:
+  - gameModeAndMapEffect: The default game mode and map effect the map will use (with auto-start or when using the train horn).
+  - spawnPos: The spawn position and orientation players will be reset to once the game ends.
+  - spectatorSpawnPos: The spawn position and orientation players will be set to when set as spectators at the start of a game.
+  - readyArea: The lobby area which players need to be in to be selected for a game.
+  - playAreaOffset: The offset players will be teleported by from the ready area into the play area.
+  - playArea: The play area outside which players will be eliminated.
+  - resetTemplateArea: The template that will be copied over the play area in order to reset the map.
+  - resetPasteOffset: The offset at which the template should be pasted.
+- Added knife skins for Patreon and YouTube supporters
+  - Can be changed by right-clicking a knife in the inventory
+  - Skins added: Ceremonial Dagger and Ice Pick
+- Moved weights, bounds, auto-start and backfire commands to a new /wathe:gameSettings command
+- Added a new role dividend setting to /wathe:gameSettings that allows setting custom killer and vigilante counts
+- Lowered the default dividend for both killers and vigilantes to 5 instead of 6
+- Players can now sleep at any time of the day
+- Fixed double doors not jamming together
+- Fixed Derringers not replenishing on kill
+- Fixed Revolvers being able to be double fired
+- Fixed the ready area being slightly too small
+- Limited knife max use to 5 seconds to prevent "cheesing and waiting around a corner with a knife ready" really long strat
+- Tweaked the API to allow more modability (PunIsIntendeds)
+- Updated French translation (PadjokeJ)
+- Updated German translation (Lukas0094)
+- Updated Chinese translation (ZeroIcceBear)
+- Added Vietnamese translation (Vuyn)
+
+</details>
+
+### 🔧 Fixes
+- Items that fall into the void (specifically when players are pushed or jump off the train while holding items) now properly teleport to the nearest dead body
+  - Added a fallback if there's no dead bodie, items wiil teleport to the nearest alive player
+- Fixed skin transparency
+
 # beta-2.2.126
 
 ### 🆕 Additions
@@ -32,13 +95,6 @@
 - Fixed the fast teleportation item not being given to players that've joined late
 - Fixed knockback not being applied when punching with a *Knife*
 - Fixed missplaced interaction safeguards (should be fully fixed now!)
-
-> ### Planned
-> - Random player teleportation table at the start of each game *(Probably comming in the next update)*
-> - Admin/OP configuration menu for TMM
-> - Add more detailed train decorations and furniture
-> - Expand and enhance scenery & lobby
-> - ~~New tasks~~ *(Waiting for a good way to implement such thing as an add-on to TMM)*
 
 # beta-2.1.126
 
