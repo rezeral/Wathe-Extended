@@ -1,11 +1,11 @@
-![Header](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/header.png)
+![Header](https://raw.githubusercontent.com/rezeral/Wathe-Extended/master/.github/assets/img/header.png)
 
 **🚂 A train murder mystery social game**
 
 This modpack expands [The Last Voyage of the Harpy Express](https://modrinth.com/modpack/harpy-express) with new roles, quality‑of‑life addons, furniture mods, performance improvements, and more customization options. It includes a fully decorated train + scenery by default, ready for you to modify.
 
 > **INFO:** This modpack is currently in active development, and I’m not fully familiar with how the Modrinth App handles modpacks. Because of this, updates may occasionally cause issues. If you experience any problems after an update, try creating a fresh instance of the modpack to see if that fixes issues.
-> If you encounter any bugs or issues, feel free to make a report on [GitHub](https://github.com/rezeral/TMM-Extended/issues)!
+> If you encounter any bugs or issues, feel free to make a report on [GitHub](https://github.com/rezeral/Wathe-Extended/issues)!
 
 ## 🔎 Modpack overview
 
@@ -105,11 +105,18 @@ Some of the features and content that are present *in addition* to the base modp
 - **In‑game configuration menu for OPs** *(Planned)*
 - **Debug tools** to assist with customizing the map and game
 
+Default keybindings that might be usefull in-game:
+
+- <kbd>V<kbd> - Opens Simple Voice Chat menu
+- <kbd>B<kbd> - Toggles Blood particle effects
+- <kbd>G<kbd> - Use role ability
+- <kbd>Left Alt<kbd> - Killer Instinct
+
 ## 🎭 Roles list
 
 Use `/listRoles` to view roles and `/setEnabledRole` to enable/disable them.
 
-### ![Killer Roles](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/killer.png)
+### ![Killer Roles](https://raw.githubusercontent.com/rezeral/Wathe-Extended/master/.github/assets/img/killer.png)
 
 - **Morphling**
 <br>
@@ -124,7 +131,7 @@ Can turn invisibile on a cooldown by pressing <kbd>G</kbd>. Held items are still
 Can swap two people around the map on a cooldown.
 
 
-### ![🥸 Neutral Roles](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/neutral.png)
+### ![🥸 Neutral Roles](https://raw.githubusercontent.com/rezeral/Wathe-Extended/master/.github/assets/img/neutral.png)
 
 - **Jester**
 <br>
@@ -154,7 +161,7 @@ Can purchase *Firecrackers*, *Lockpicks*, *Notes*, and *Delusion Vials*
 <br>
 Gains coins passively over time
 
-### ![👤 Civilian Roles](https://raw.githubusercontent.com/rezeral/TMM-Extended/master/.github/assets/img/civilian.png)
+### ![👤 Civilian Roles](https://raw.githubusercontent.com/rezeral/Wathe-Extended/master/.github/assets/img/civilian.png)
 
 - **Conductor**
 <br>
@@ -204,9 +211,24 @@ Can purchase *Lockpicks*, *Delusion Vials*, *Firecrackers* and *Notes*.
 <br>
 Gains coins passively over time.
 
+<details>
+<summary>Modifiers</summary>
+
+Use `/listRoles` to view roles and `/setEnabledModifiers` to enable/disable them.
+
 - **Guesser** *(Disabled by default)*
 <br>
 Can guess player's role: if the guess is correct the player dies; if incorrect, the Guesser dies.
+
+- **Tiny** *(Disabled by default)*
+<br>
+-
+
+- **Chameleon** *(Disabled by default)*
+<br>
+-
+
+</details>
 
 <details>
 <summary>Bonus roles</summary>
