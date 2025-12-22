@@ -8,10 +8,10 @@
 	],
 	// Which Modifiers should be disabled. Modifiers also show up in /listRoles and /setEnabledModifier.
 	disabledModifiers: [
-		"chameleon",
-		"guesser",
-		"tiny"
+		"allergic"
 	],
 	// Maximum amount of modifiers a player can have.
-	modifierMaximum: 1
+	modifierMaximum: 1,
+	// How many modifiers should be given relative to the Killer Dividend
+	modifierMultiplier: 0
 }

@@ -9,11 +9,11 @@
     "minecraft:recovery_compass",
     "minecraft:soul_lantern",
     "minecraft:lantern",
-    "trainmurdermystery:champagne",
-    "trainmurdermystery:cosmopolitan",
-    "trainmurdermystery:mojito",
-    "trainmurdermystery:martini",
-    "trainmurdermystery:old_fashioned"
+    "wathe:champagne",
+    "wathe:cosmopolitan",
+    "wathe:mojito",
+    "wathe:martini",
+    "wathe:old_fashioned"
   ],
   "enableAnimationSmoothing": true,
   "enableInWorldMapRendering": true,

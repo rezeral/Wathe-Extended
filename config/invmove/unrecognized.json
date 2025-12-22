@@ -11,7 +11,10 @@
     "net.minecraft.class_4189": true,
     "net.minecraft.class_440": true,
     "dev.doctor4t.wathe.client.gui.screen.ingame.LimitedInventoryScreen": true,
-    "dev.doctor4t.wathe.client.gui.screen.ingame.NoteScreen": false
+    "dev.doctor4t.wathe.client.gui.screen.ingame.NoteScreen": false,
+    "de.keksuccino.fancymenu.customization.customgui.CustomGuiBaseScreen": true,
+    "com.moulberry.axiom.screen.EditDisplayEntityScreen": true,
+    "de.maxhenkel.voicechat.gui.VoiceChatScreen": true
   },
   "hideBackground": {
     "dev.doctor4t.wathe.client.gui.screen.ingame.LimitedInventoryScreen": true
