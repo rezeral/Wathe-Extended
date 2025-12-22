@@ -12,6 +12,3 @@ scoreboard players set ready wathe_ready 0
 scoreboard players set @a wathe_assigned 0
 scoreboard players set @a wathe_assigned_slot 0
 scoreboard players set @a wathe_rand 0
-
-# Starts the loop for assigning unique random positions to players in the ready area
-function wathe:rtp/loop

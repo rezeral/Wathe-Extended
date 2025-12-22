@@ -12,3 +12,7 @@ execute if score timer wathe_timer matches 200 run function wathe:ready_area/tim
 # When non-zero, decrement each tick, when it reaches 0 clear the ready lock
 execute if score timer_lock_timer wathe_lock_timer_timer matches 1.. run scoreboard players remove timer_lock_timer wathe_lock_timer_timer 1
 execute if score timer_lock_timer wathe_lock_timer_timer matches 0 run execute if score lock wathe_lock_timer matches 1 run scoreboard players set lock wathe_lock_timer 0
+
+# Starts the loop for assigning unique random positions to players in the ready area
+# Get called when the Lock Timer hits 7 seconds (140 ticks) to teleport players while their screen fades out to black
+execute if score timer_lock_timer wathe_lock_timer_timer matches 140 run function wathe:rtp/loop
