@@ -24,6 +24,11 @@ scoreboard objectives remove wathe_debug_ui
 scoreboard objectives remove wathe_handler
 scoreboard objectives remove wathe_handler_cache
 
+scoreboard objectives remove wathe_assigned
+scoreboard objectives remove wathe_assigned_slot
+scoreboard objectives remove wathe_rand
+scoreboard objectives remove wathe_attempts
+
 # Remove all scoreboard scores
 # : Just in case any score remained after objective removal
 scoreboard players reset *
@@ -54,5 +59,12 @@ scoreboard objectives add wathe_assigned_slot dummy {"text":"Assigned Slot","col
 scoreboard objectives add wathe_rand dummy {"text":"Randomizer","color":"aqua"}
 scoreboard objectives add wathe_attempts dummy {"text":"Assignment Attempts","color":"red"}
 
+scoreboard objectives add wathe_yawp dummy {"text":"YAWP State","color":"light_purple"}
+
 # Load complete message
 tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"Datapack enabled!","color":"green"}]
+
+# Enable world protection by default on load
+# : This is to ensure that world protection is always enabled when the datapack is loaded or reloaded
+# : Can be disabled again by calling the wathe:debug/yawp/disable function
+function wathe:debug/yawp/enable

@@ -1,6 +1,6 @@
-# Clears every stored data and scoreboard objectives created by the TMM datapack
+# Clears every stored data and scoreboard objectives created by the Wathe Extended datapack
 # Useful when testing and making modifications to the datapack
-# Instead of using /datapack disable, just run this function
+# Instead of using /datapack disable, just run this function using /function wathe:unload
 
 # Remove all scoreboard objectives
 scoreboard objectives remove wathe_playercount
@@ -25,6 +25,8 @@ scoreboard objectives remove wathe_assigned
 scoreboard objectives remove wathe_assigned_slot
 scoreboard objectives remove wathe_rand
 scoreboard objectives remove wathe_attempts
+
+scoreboard objectives remove wathe_yawp
 
 # Remove all scoreboard scores
 scoreboard players reset *

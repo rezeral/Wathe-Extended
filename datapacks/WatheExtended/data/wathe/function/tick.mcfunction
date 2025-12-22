@@ -1,7 +1,6 @@
 # This function is called every tick through minecraft:tick tag
 # Calling functions that need to run every tick
-function wathe:debug/logger
-
+function wathe:listeners/logger
 function wathe:listeners/items
 function wathe:listeners/fptp
 function wathe:listeners/boarding
