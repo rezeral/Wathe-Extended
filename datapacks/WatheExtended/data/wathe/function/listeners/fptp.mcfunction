@@ -1,8 +1,14 @@
 # This function is called every tick through wathe:tick 
 
-# Teleports back fake players inside the ready area when game ends
-execute if entity @p[name=Alpha,x=-873.0,dx=0,y=0,dy=0,z=-323.0,dz=0] run tp Alpha -981.5 1.00 -360.5 225 0
-execute if entity @p[name=Bravo,x=-873.0,dx=0,y=0,dy=0,z=-323.0,dz=0] run tp Bravo -973.5 1.00 -359.5 225 0
-execute if entity @p[name=Charlie,x=-873.0,dx=0,y=0,dy=0,z=-323.0,dz=0] run tp Charlie -942.5 1.00 -360.5 125 0
-execute if entity @p[name=Delta,x=-873.0,dx=0,y=0,dy=0,z=-323.0,dz=0] run tp Delta -921.5 1.00 -359.5 -180 0
-execute if entity @p[name=Echo,x=-873.0,dx=0,y=0,dy=0,z=-323.0,dz=0] run tp Echo -902.5 1.50 -362.5 0 0
+# Kick fake players when the game ends instead of teleporting them into the ready area (so the game does not restart instantly)
+execute if entity @p[name=wathe_fp_1,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_2,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_3,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_4,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_5,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_6,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_7,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_8,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_9,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_10,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
+execute if entity @p[name=wathe_fp_11,x=-872,dx=3,y=-1,dy=2,z=-325,dz=3] run function wathe:debug/fp/remove
