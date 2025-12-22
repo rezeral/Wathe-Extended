@@ -2,7 +2,7 @@ version:3955
 ao:true
 biomeBlendRadius:2
 enableVsync:false
-entityDistanceScaling:1.0
+entityDistanceScaling:0.5
 entityShadows:false
 forceUnicodeFont:false
 japaneseGlyphVariants:false
@@ -48,7 +48,7 @@ mouseSensitivity:0.4
 damageTiltStrength:0.5
 highContrast:false
 narratorHotkey:false
-resourcePacks:["file/Fresh Moves.zip","file/Serified Font.zip","file/Modpack Resources","fabric"]
+resourcePacks:["file/Fresh Moves.zip","file/Serified Font.zip","file/Modpack Resources","fabric","minecraft:supporteatinganimation"]
 incompatibleResourcePacks:["asyncparticles","badoptimizations","controlling","craterlib","drippyloadingscreen","entity_model_features","entity_texture_features","fancymenu","konkrete","searchables","simplerpc","sodiumoptionsapi","sodiumoptionsmodcompat","txnilib","yawp","yet_another_config_lib_v3"]
 lastServer:
 lang:en_us
@@ -156,7 +156,6 @@ key_key.presencefootsteps.toggle:key.keyboard.unknown
 key_key.raised.options:key.keyboard.unknown
 key_talkingheads.keybinding.modToggle:key.keyboard.unknown
 key_talkingheads.keybinding.modSettings:key.keyboard.unknown
-key_Toggle Blood:key.keyboard.b
 key_key.push_to_talk:key.keyboard.unknown
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.unknown
@@ -182,7 +181,7 @@ soundCategory_neutral:1.0
 soundCategory_player:1.0
 soundCategory_ambient:1.0
 soundCategory_voice:1.0
-modelPart_cape:true
+modelPart_cape:false
 modelPart_jacket:true
 modelPart_left_sleeve:true
 modelPart_right_sleeve:true
