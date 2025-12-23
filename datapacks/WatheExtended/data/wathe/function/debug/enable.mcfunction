@@ -5,7 +5,8 @@ scoreboard players set debug wathe_debug 1
 scoreboard objectives setdisplay sidebar wathe_debug_ui
 
 # Tellraw about world protection toggle command
-tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"If you wish to disable World Protection, run this command: ","color":"yellow","extra": [{"text":"/function wathe:debug/yawp/disable","color":"gold","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/disable"},"underlined": true}]}]
+execute if score yawp wathe_yawp matches 1 run tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"World Protection is currently enabled. If you wish to disable World Protection, run ","color":"green","extra": [{"text":"this command.","color":"dark_green","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/disable"},"underlined": true}]}]
+execute unless score yawp wathe_yawp matches 1 run tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"World Protection is currently disabled. If you wish to enable World Protection, run ","color":"red","extra": [{"text":"this command.","color":"dark_red","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/enable"},"underlined": true}]}]
 
 # Show/hide interaction safeguards boundaries
 execute if score yawp wathe_yawp matches 1 run yawp show near 500 Frame
