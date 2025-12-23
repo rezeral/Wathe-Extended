@@ -43,6 +43,6 @@ execute as @a[x=-1017,dx=203,y=0,dy=4,z=-364,dz=6] if entity @s[nbt={Inventory:[
 execute as @a[gamemode=!creative] if entity @s[nbt={Inventory:[{id:"minecraft:bowl"}]}] run clear @s minecraft:bowl
 
 # Checks for dropped items falling outside the playing area, if so, teleports them to the closest player body
-execute as @e[type=item,x=-57,dx=245,y=117.5,dy=3,z=-551,dz=31] at @s if entity @e[type=wathe:player_body] run execute at @e[type=wathe:player_body,limit=1,sort=nearest] run tp @s ~ ~0.5 ~
+execute as @e[type=item,x=-57,dx=245,y=117.5,dy=3,z=-551,dz=31] at @s if entity @e[type=wathe:player_body] run execute at @e[type=wathe:player_body,limit=1,sort=nearest] run tp @s ~ ~1 ~
 ## Fallback; If no player bodies exist, teleport to nearest player
-execute as @e[type=item,x=-57,dx=245,y=117.5,dy=3,z=-551,dz=31] at @s unless entity @e[type=wathe:player_body] run execute at @e[type=player,limit=1,sort=nearest] run tp @s ~ ~0.5 ~
+execute as @e[type=item,x=-57,dx=245,y=117.5,dy=3,z=-551,dz=31] at @s unless entity @e[type=wathe:player_body] run execute at @e[type=player,limit=1,sort=nearest] run tp @s ~ ~1 ~
