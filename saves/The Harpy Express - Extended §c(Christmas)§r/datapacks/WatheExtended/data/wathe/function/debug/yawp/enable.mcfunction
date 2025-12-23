@@ -6,7 +6,7 @@ execute if score debug wathe_debug matches 1 run yawp show near 500 Frame
 execute unless score debug wathe_debug matches 1 run yawp hide all
 
 # Notify that safeguards have been enabled
-tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"World Protection Enabled, run this command to disable it: ","color":"green","extra": [{"text":"/function wathe:debug/yawp/disable","color":"dark_green","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/disable"},"underlined": true}]}]
+tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"World Protection Enabled, ","color":"green","extra": [{"text":"click here to disable it.","color":"dark_green","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/disable"},"underlined": true}]}]
 title @a actionbar {"text":"World Protection enabled","color":"green"}
 
 # Enable PARENT: Lobby

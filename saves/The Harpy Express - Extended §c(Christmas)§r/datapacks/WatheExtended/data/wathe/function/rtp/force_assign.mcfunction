@@ -1,6 +1,7 @@
 # Forcing assignement on the first free slot to the actual player
 # : This is a fallback mechanism when random assignment fails after multiple attempts
-# : Might happen when there are few slots left and random keeps picking already assigned ones
+# : Might happen when there are few slots left or more players than available slots 
+# : which makes random keeps picking already assigned ones.
 
 # Try slots 1..16 sequentially; when a free slot is found, assign it and mark the player assigned
 execute unless entity @a[x=-1017,dx=203,y=0,dy=4,z=-364,dz=6,scores={wathe_assigned_slot=1}] run scoreboard players set @s wathe_assigned_slot 1

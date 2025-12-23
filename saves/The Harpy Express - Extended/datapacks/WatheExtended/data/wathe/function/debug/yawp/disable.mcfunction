@@ -6,7 +6,7 @@ yawp hide all
 kill @e[type=minecraft:block_display]
 
 # Notify that safeguards have been disabled
-tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"World Protection Disabled, run this command to enable it: ","color":"red","extra": [{"text":"/function wathe:debug/yawp/enable","color":"dark_red","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/enable"},"underlined": true}]}]
+tellraw @a [{"text":"[Wathe] ","color":"blue"},{"text":"World Protection Disabled, ","color":"red","extra": [{"text":"click here to enable it.","color":"dark_red","clickEvent":{"action":"run_command","value":"/function wathe:debug/yawp/enable"},"underlined": true}]}]
 title @a actionbar {"text":"World Protection disabled","color":"red"}
 
 # Disable PARENT: Lobby
