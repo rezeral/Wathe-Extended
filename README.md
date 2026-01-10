@@ -70,6 +70,10 @@ Use `/listRoles` to view roles and `/setEnabledRole` to enable/disable them.
 <br> Starts the game with 50 coins.
 <br> Gains 30 coins for every player which is around them (excluding themselves).
 
+- **Muzzler**
+<br> Can silence any players for 75 coins
+<br> When Muzzled, staying outside for too long will suffocate you, and other players can't hear you speak.
+
 ### ![🥸 Neutral Roles](https://raw.githubusercontent.com/rezeral/Wathe-Extended/master/.github/assets/img/neutral.png)
 
 - **Jester**
@@ -90,12 +94,18 @@ Use `/listRoles` to view roles and `/setEnabledRole` to enable/disable them.
 <br> Gains coins passively over time.
 
 - **Amnesiac**
-Can permanently take any dead body's role for the rest of the round. Adopting their abilities and win condition.
+<br> Can permanently take any dead body's role for the rest of the round. Adopting their abilities and win condition.
 
 - **Arsonist**
 <br> Spawn with a *Gas Can* and a *Lighter*
 <br> Their goal is to douse all players and ignite them all.
 <br> Igniting the *Lighter* too early will kill them.
+
+- **Initiate**
+<br> Has to kill the other **Initiate** in order to become a Killer.
+<br> Gains 50 coins per tasks done.
+<br> If either of the Initiates die from anyone other than another **Initiate**, the alive Initiate becomes an **Amnesiac**
+<br> If an **Initiate** attempts to kill a player that isn't the other **Initiate**, the **Killer Initiate** will drop dead instead
 
 ### ![👤 Civilian Roles](https://raw.githubusercontent.com/rezeral/Wathe-Extended/master/.github/assets/img/civilian.png)
 
@@ -130,6 +140,18 @@ Can permanently take any dead body's role for the rest of the round. Adopting th
 <br> Spawns with a Fake Knife.
 <br> Can purchase *Lockpicks*, *Delusion Vials*, *Firecrackers* and *Notes*.
 <br> Gains coins passively over time.
+
+- **Trapper**
+<br> Can purshase a *Role Mine*.
+<br> Gains 50 coins per tasks done.
+<br> The *Role Mine* can be placed and can gets the roles of 3 people that pass into it's area. 
+<br> The *Role Mine* makes a beep sound alerting any players that got trapped.
+<br> It does not mention the names of the players; only their roles.
+
+- **Starstruck**
+<br> Can use Starstruck ability once every 90 seconds.
+<br> While Starstruck, can move faster and see players though walls using instinct for 15 seconds.
+<br> Upon completing their current task, the ability cooldown will be decreased by 5 seconds.
 
 </details>
 
@@ -178,6 +200,7 @@ Awesome add-ons for the Wathe mod and the people who've made them:
 - [Blood - Wathe](https://modrinth.com/mod/wathe-blood) by [@Buff_sheep](https://modrinth.com/user/Buff_sheep)
 - [Noelle's Roles - Wathe](https://modrinth.com/mod/noelles-roles-tmm) by [@agmas](https://modrinth.com/user/agmas)
 - [Stupid Express](https://modrinth.com/mod/stupid-express) by [@flowingforever](https://modrinth.com/user/flowingforever)
+- [Starry Express](https://modrinth.com/mod/starexpress) by [@AussieBox](https://modrinth.com/user/AussieBox)
 
 <br>
 
