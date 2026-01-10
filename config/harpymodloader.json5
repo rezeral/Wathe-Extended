@@ -3,7 +3,10 @@
 	disabled: [
 		"awesome_binglus",
 		"the_insane_damned_paranoid_killer",
-		"better_vigilante"
+		"better_vigilante",
+		"noellesroles:awesome_binglus",
+		"noellesroles:better_vigilante",
+		"noellesroles:the_insane_damned_paranoid_killer"
 	],
 	// Which Modifiers should be disabled. Modifiers also show up in /listRoles and /setEnabledModifier.
 	disabledModifiers: [],

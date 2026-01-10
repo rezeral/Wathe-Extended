@@ -87,3 +87,6 @@ net.minecraft.class_442 {
 net.minecraft.class_429 {
 }
 
+org.aussiebox.starexpress.client.gui.screen.GuidebookScreen {
+}
+
