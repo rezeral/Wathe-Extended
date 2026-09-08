@@ -545,12 +545,37 @@
 
   "gui.watheextended.guidebook.title": "Guidebook",
 
+  "gui.watheextended.guidebook.tab.game_guide": "Game Guide",
   "gui.watheextended.guidebook.tab.modifiers": "Modifiers",
   "gui.watheextended.guidebook.tab.roles": "Roles",
 
   "gui.watheextended.guidebook.left_page.roles.side.civilian": "Civilian Roles",
   "gui.watheextended.guidebook.left_page.roles.side.killer": "Killer Roles",
   "gui.watheextended.guidebook.left_page.roles.side.neutral": "Neutral Roles",
+
+  "gui.watheextended.guidebook.left_page.guide.section.basics": "The Basics",
+  "gui.watheextended.guidebook.left_page.guide.section.equipment": "Coins & Equipment",
+  "gui.watheextended.guidebook.left_page.guide.section.survival": "Staying Alive",
+
+  "gui.watheextended.guidebook.guide.title.overview": "Overview",
+  "gui.watheextended.guidebook.guide.title.sides": "Sides",
+  "gui.watheextended.guidebook.guide.title.round_flow": "The Journey",
+  "gui.watheextended.guidebook.guide.title.coins": "Coins",
+  "gui.watheextended.guidebook.guide.title.shop": "The Shop",
+  "gui.watheextended.guidebook.guide.title.abilities": "Abilities",
+  "gui.watheextended.guidebook.guide.title.bodies": "Bodies",
+  "gui.watheextended.guidebook.guide.title.doors": "Doors & Keys",
+  "gui.watheextended.guidebook.guide.title.tips": "Tips",
+
+  "gui.watheextended.guidebook.guide.desc.overview": "Every passenger boards the Harpy Express with a secret §orole§r and, sometimes, a §omodifier§r. Nobody is told who anyone else is. Your role decides your goal, your equipment and your abilities.\\n\\nOpen this guidebook at any time to look up your own role, everyone else's, and the modifiers currently in play.",
+  "gui.watheextended.guidebook.guide.desc.sides": "Roles belong to one of three sides:\\n\\n{icon:civilian} §2Civilians§r survive the journey and expose the killers.\\n{icon:killer} §4Killers§r eliminate everyone aboard, often working together.\\n{icon:neutral} §6Neutrals§r follow a goal of their own, and answer to nobody.\\n\\nA role marked with {icon:disabled} in the Roles tab is disabled on this server and will not appear.",
+  "gui.watheextended.guidebook.guide.desc.round_flow": "Each round begins in the ready area, where players gather before departure. Once the train sets off, roles are handed out and the journey proper begins.\\n\\nThe train stops at stations along the way. The round ends when one side has met its goal, or the line runs out of track.",
+  "gui.watheextended.guidebook.guide.desc.coins": "{icon:coin} §6Coins§r are the currency of the Harpy Express. You earn them by doing the job your role was given, and they are spent in the shop.\\n\\nSome modifiers change how many coins you earn, so check your modifier before counting on a purchase.",
+  "gui.watheextended.guidebook.guide.desc.shop": "Roles with a shop can trade coins for equipment mid-journey. The Items page of any role in the Roles tab lists what that role starts with and what it can buy, with the current price beside each entry.\\n\\nPrices shown are the ones this server is running, not defaults.",
+  "gui.watheextended.guidebook.guide.desc.abilities": "Many roles carry an active or passive ability. Actives are bound to your ability key and go on cooldown once used; passives simply work.\\n\\nThe Abilities page of a role lists everything it can do.",
+  "gui.watheextended.guidebook.guide.desc.bodies": "A dead passenger leaves a body behind. Bodies are evidence: they reveal that something happened, and some roles can learn far more from one than you would like.\\n\\nKillers have ways of making a body disappear, so an empty corridor does not mean an empty train.",
+  "gui.watheextended.guidebook.guide.desc.doors": "Not every door aboard is open to everyone. Some are locked, some jam, and some are held shut by staff.\\n\\nKeys, lockpicks and crowbars all get you through a door, but each of them says something different about who you are.",
+  "gui.watheextended.guidebook.guide.desc.tips": "Stay in sight of other passengers; killers prefer quiet corners.\\n\\nRemember who you saw and when. A timeline is worth more than a hunch.\\n\\nRead your own role's pages before you act. Half of surviving is knowing what you are holding.",
 
   "gui.watheextended.guidebook.right_page.hint.select": "Select an entry",
   "gui.watheextended.guidebook.right_page.roles.subtitle.abilities": "Abilities",

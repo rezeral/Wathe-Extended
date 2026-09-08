@@ -36,6 +36,55 @@ public final class GuidebookEntryBuilder {
         return GuidebookEntryBuilder::buildModifiers;
     }
 
+    public static GuidebookEntrySource gameGuide() {
+        return GuidebookEntryBuilder::buildGameGuide;
+    }
+
+    // section header icons are placeholders reused from the existing font sheet
+    private record GuideSection(String headerKey, int headerColor, String iconName, List<String> topics) {
+    }
+
+    private static final int GUIDE_HEADER_COLOR = 0xB07B2E;
+    private static final int GUIDE_ENTRY_COLOR = 0x4A3728;
+
+    private static final List<GuideSection> GUIDE_SECTIONS = List.of(
+            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.basics", GUIDE_HEADER_COLOR, "question",
+                    List.of("overview", "sides", "round_flow")),
+            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.equipment", GUIDE_HEADER_COLOR, "coin",
+                    List.of("coins", "shop", "abilities")),
+            // TODO: replace "instinct" with the new survival header icon
+            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.survival", GUIDE_HEADER_COLOR, "instinct",
+                    List.of("bodies", "doors", "tips"))
+    );
+
+    private static List<GuidebookEntry> buildGameGuide() {
+        List<GuidebookEntry> list = new ArrayList<>();
+        try {
+            boolean first = true;
+            for (GuideSection section : GUIDE_SECTIONS) {
+                if (!first) list.add(GuidebookEntry.spacer());
+                first = false;
+
+                int color = section.headerColor();
+                Text header = ScreenUtils.icon(section.iconName()).copy()
+                        .append(Text.literal(" ").styled(style -> style.withFont(null).withColor(color)))
+                        .append(Text.translatable(section.headerKey()).styled(style -> style.withBold(true).withColor(color)));
+                list.add(GuidebookEntry.header(header, color));
+
+                for (String topic : section.topics()) {
+                    Text title = Text.translatable("gui.watheextended.guidebook.guide.title." + topic);
+                    String descKey = "gui.watheextended.guidebook.guide.desc." + topic;
+                    Text text = ScreenUtils.icon("enabled").copy()
+                            .append(Text.literal(" ").styled(style -> style.withFont(null)))
+                            .append(title.copy().styled(style -> style.withColor(GUIDE_ENTRY_COLOR)));
+                    list.add(GuidebookEntry.entry(text, GUIDE_ENTRY_COLOR, "guide:" + topic, descKey, title, true));
+                }
+            }
+        } catch (Throwable ignored) {
+        }
+        return list;
+    }
+
     private static List<GuidebookEntry> buildRoles() {
         List<GuidebookEntry> list = new ArrayList<>();
         try {

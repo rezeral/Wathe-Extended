@@ -110,6 +110,7 @@ public class GuidebookScreen extends Screen {
     private boolean firstOpen = true;
     private List<GuidebookEntry> rolesEntries = null;
     private List<GuidebookEntry> modifierEntries = null;
+    private List<GuidebookEntry> gameGuideEntries = null;
     private String selectedId = null;
     private Text selectedTitle = null;
     private int selectedColor = 0xFF3B2A1A;
@@ -558,6 +559,7 @@ public class GuidebookScreen extends Screen {
         if (client.currentScreen instanceof GuidebookScreen screen) {
             screen.rolesEntries = null;
             screen.modifierEntries = null;
+            screen.gameGuideEntries = null;
             screen.refreshEntries();
         }
     }
@@ -616,6 +618,9 @@ public class GuidebookScreen extends Screen {
             case MODIFIERS -> {
                 if (modifierEntries == null) modifierEntries = GuidebookEntryBuilder.modifiers().build();
             }
+            case GAME_GUIDE -> {
+                if (gameGuideEntries == null) gameGuideEntries = GuidebookEntryBuilder.gameGuide().build();
+            }
         }
         recalcLeftHeight();
     }
@@ -624,6 +629,7 @@ public class GuidebookScreen extends Screen {
         return switch (activeTab) {
             case ROLES -> rolesEntries != null ? rolesEntries : List.of();
             case MODIFIERS -> modifierEntries != null ? modifierEntries : List.of();
+            case GAME_GUIDE -> gameGuideEntries != null ? gameGuideEntries : List.of();
         };
     }
 
@@ -819,7 +825,9 @@ public class GuidebookScreen extends Screen {
 
     private enum Tab {
         ROLES(Text.translatable("gui.watheextended.guidebook.tab.roles"), Identifier.of("watheextended", "textures/gui/guidebook/role.png"), Identifier.of("watheextended", "textures/gui/guidebook/role_unselected.png"), 12, 10),
-        MODIFIERS(Text.translatable("gui.watheextended.guidebook.tab.modifiers"), Identifier.of("watheextended", "textures/gui/guidebook/modifier.png"), Identifier.of("watheextended", "textures/gui/guidebook/modifier_unselected.png"), 12, 10);
+        MODIFIERS(Text.translatable("gui.watheextended.guidebook.tab.modifiers"), Identifier.of("watheextended", "textures/gui/guidebook/modifier.png"), Identifier.of("watheextended", "textures/gui/guidebook/modifier_unselected.png"), 12, 10),
+        // TODO: replace role.png/role_unselected.png with the new game guide tab icon
+        GAME_GUIDE(Text.translatable("gui.watheextended.guidebook.tab.game_guide"), Identifier.of("watheextended", "textures/gui/guidebook/role.png"), Identifier.of("watheextended", "textures/gui/guidebook/role_unselected.png"), 12, 10);
 
         final Text label;
         final Identifier icon;
