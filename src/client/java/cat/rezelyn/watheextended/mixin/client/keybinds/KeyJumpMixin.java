@@ -7,12 +7,13 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = KeyBinding.class, priority = 6000)
-public class KeyJumpMixin {
+public abstract class KeyJumpMixin {
 
     @Shadow private boolean pressed;
     @Shadow private int timesPressed;
@@ -26,7 +27,7 @@ public class KeyJumpMixin {
 
         String mode = ClientConfig.getString("watheextended.jumpMode", "DEFAULT");
         boolean allowJump = "EVERYWHERE".equals(mode) || ("LOBBY".equals(mode) && !GameStatus.State(client.world));
-        cir.setReturnValue(allowJump && this.pressed);
+        cir.setReturnValue(keyPressed() || (allowJump && this.pressed));
     }
 
     @Inject(method = "wasPressed", at = @At("HEAD"), cancellable = true)
@@ -40,6 +41,9 @@ public class KeyJumpMixin {
         boolean allowJump = "EVERYWHERE".equals(mode) || ("LOBBY".equals(mode) && !GameStatus.State(client.world));
         boolean pressed = this.timesPressed > 0;
         if (pressed) this.timesPressed--;
-        cir.setReturnValue(allowJump && pressed);
+        cir.setReturnValue(keyPressed() || (allowJump && pressed));
     }
+
+    @Accessor("pressed")
+    abstract boolean keyPressed();
 }
