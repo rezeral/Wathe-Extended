@@ -46,15 +46,16 @@ public final class GuidebookEntryBuilder {
 
     private static final int GUIDE_HEADER_COLOR = 0xB07B2E;
     private static final int GUIDE_ENTRY_COLOR = 0x4A3728;
+    private static final int GUIDE_CIVILIAN_COLOR = 0x75A743;
+    private static final int GUIDE_KILLER_COLOR = 0xDC001E;
 
     private static final List<GuideSection> GUIDE_SECTIONS = List.of(
-            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.basics", GUIDE_HEADER_COLOR, "question",
-                    List.of("overview", "sides", "round_flow")),
-            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.equipment", GUIDE_HEADER_COLOR, "coin",
-                    List.of("coins", "shop", "abilities")),
-            // TODO: replace "instinct" with the new survival header icon
-            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.survival", GUIDE_HEADER_COLOR, "instinct",
-                    List.of("bodies", "doors", "tips"))
+            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.overview", GUIDE_HEADER_COLOR, "question",
+                    List.of("overview", "sides", "round_flow", "voice_chat", "doors", "coins", "abilities", "bodies")),
+            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.civilians", GUIDE_CIVILIAN_COLOR, "civilian",
+                    List.of("mood", "vigilante", "civilian_tips", "poison_tip", "shootouts")),
+            new GuideSection("gui.watheextended.guidebook.left_page.guide.section.killers", GUIDE_KILLER_COLOR, "killer",
+                    List.of("instinct", "killer_tips", "knife_tip", "lockpick_tip", "grenade_tip", "blackout_tip", "psycho_tip", "countering_grouping"))
     );
 
     private static List<GuidebookEntry> buildGameGuide() {
