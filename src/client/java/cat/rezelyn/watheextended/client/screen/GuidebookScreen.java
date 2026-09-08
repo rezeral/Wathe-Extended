@@ -815,8 +815,7 @@ public class GuidebookScreen extends Screen {
     private enum Tab {
         ROLES(Text.translatable("gui.watheextended.guidebook.tab.roles"), Identifier.of("watheextended", "textures/gui/guidebook/role.png"), Identifier.of("watheextended", "textures/gui/guidebook/role_unselected.png"), 12, 10, GuidebookEntryBuilder.roles()),
         MODIFIERS(Text.translatable("gui.watheextended.guidebook.tab.modifiers"), Identifier.of("watheextended", "textures/gui/guidebook/modifier.png"), Identifier.of("watheextended", "textures/gui/guidebook/modifier_unselected.png"), 12, 10, GuidebookEntryBuilder.modifiers()),
-        // TODO: replace role.png/role_unselected.png with the new game guide tab icon
-        GAME_GUIDE(Text.translatable("gui.watheextended.guidebook.tab.game_guide"), Identifier.of("watheextended", "textures/gui/guidebook/role.png"), Identifier.of("watheextended", "textures/gui/guidebook/role_unselected.png"), 12, 10, GuidebookEntryBuilder.gameGuide());
+        GAME_GUIDE(Text.translatable("gui.watheextended.guidebook.tab.game_guide"), Identifier.of("watheextended", "textures/gui/guidebook/game_guide.png"), Identifier.of("watheextended", "textures/gui/guidebook/game_guide_unselected.png"), 12, 10, GuidebookEntryBuilder.gameGuide());
 
         final Text label;
         final Identifier icon;
